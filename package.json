@@ -1,7 +1,7 @@
 {
-  "name": "frontendmasters-gatsby",
+  "name": "tlmader-gatsby",
   "private": true,
-  "description": "Bare-bones starter for the Gatsby Frontend Masters workshop.",
+  "description": "My first website built with Gatsby!",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
