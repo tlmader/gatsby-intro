@@ -11,7 +11,7 @@ const ImageBackground = styled(BackgroundImage)`
   + * {
     margin-top: 0;
   }
-`
+`;
 
 const TextBox = styled('div')`
   background-image: linear-gradient(to top, #ddbbffdd 2rem, #ddbbff00);
@@ -36,12 +36,12 @@ const TextBox = styled('div')`
   a {
     margin-top: 0.5rem;
   }
-`
+`;
 
 const Hero = () => {
   const { image } = useStaticQuery(graphql`
     query {
-      image: file(relativePath: { eq: "hero.jpg"}) {
+      image: file(relativePath: { eq: "hero.jpg" }) {
         sharp: childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid_withWebp
@@ -49,13 +49,13 @@ const Hero = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <ImageBackground Tag="section" fluid={image.sharp.fluid}>
       <TextBox>
-        <h1>Frontend Masters + Gatsby &hearts;</h1>
+        <h1>tlmader + Gatsby &hearts;</h1>
         <p>
-          Hello Minnesota <Link to="about">Learn about me &rarr;</Link>
+          Hello, New Orleans! <Link to="about">Learn about me &rarr;</Link>
         </p>
       </TextBox>
     </ImageBackground>

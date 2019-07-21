@@ -27,13 +27,15 @@ export const usePosts = () => {
     }
   `);
 
-  return data.allMdx.nodes.map(post => ({
-    title: post.frontmatter.title,
-    slug: post.frontmatter.slug,
-    author: post.frontmatter.author,
-    image: post.frontmatter.image,
-    excerpt: post.excerpt,
-  }));
+  return data.allMdx.nodes
+    .map(post => ({
+      title: post.frontmatter.title,
+      slug: post.frontmatter.slug,
+      author: post.frontmatter.author,
+      image: post.frontmatter.image,
+      excerpt: post.excerpt,
+    }))
+    .reverse();
 };
 
 export default usePosts;

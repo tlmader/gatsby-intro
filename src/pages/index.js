@@ -13,8 +13,8 @@ export default () => {
     <>
       <Hero />
       <Layout>
-        <h1>Hi, Frontend Masters!</h1>
-        <p>Hello New Orleans!</p>
+        <h1>Welcome</h1>
+        <p>This is my first website built with Gatsby.</p>
         <Link to="/about/">Learn about me &rarr;</Link>
         <h2>Read my blog</h2>
         {posts.map(post => (
